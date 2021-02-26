@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <title>Formulários</title>
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 200px;
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Formulários
+        classe: form-control-<opção>
+        opção: sm, lg
+    -->
+    <form action="">
+        <div class="form-group">
+            <label for="usuario">Usuário</label>
+            <input class="form-control form-control-sm" type="usuario" id="usuario" placeholder="Digite seu Usuário">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" type="email" id="email" placeholder="Didite seu Email" readonly >
+            <small class="form-text">Email será validado</small>
+        </div>
+
+        <!-- select -->
+        <div class="form-group">
+            <label for="estados">Estado</label>
+            <select name="" id="estados" class="form-control">
+                <option value="">Ceára</option>
+                <option value="">São Paulo</option>
+                <option value="">Rio de Janeiro</option>
+                <option value="">...</option>
+            </select>
+        </div>
+
+        <!-- textarea -->
+        <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea class="form-control" name="" id="mensagem" rows="3"></textarea>
+        </div>
+
+        <!-- file input -->
+        <div class="form-group">
+            <label for="arquivo">Arquivo</label>
+            <input class="form-control-file" type="file" name="" id="arquivo">
+        </div>
+
+        <!-- custom file input -->
+        <div class="custom-file">
+            <label class="custom-file-label">Selecione Arquivo</label>
+            <input class="custom-file-input" type="file" name="" id="arquivo">
+        </div>
+        <br><br>
+
+        <!-- range -->
+        <div class="form-group">
+            <label id="range">Satisfação</label>
+            <input class="custom-range" type="range" name="" id="range" min="1" max="10">
+        </div>
+
+        <!-- button -->
+        <input class="btn btn-primary" type="submit" value="Salvar">
+    </form>
+    <br><br>
+
+    <!-- Formulário inline -->
+    <form class="form-inline ">
+        <input class="form-control mr-2 mb-2" type="text" placeholder="Digite seu Usuário">
+        <input class="form-control mr-2 mb-2" type="email" placeholder="Digite seu Email">
+        <input class="btn btn-primary mb-2" type="submit" value="Logar">
+    </form>
+    <br><br>
+
+    <!-- Validação de formulário
+        classes: is-valid, is-invalid, invalid-feedback, valid-feedback
+    -->
+    <form>
+        <div class="form-group">
+            <label for="email-usuario">E-mail</label>
+            <input class="form-control is-valid" type="text" id="email-usuario" placeholder="Digite seu e-mail">
+            <div class="valid-feedback">
+                E-mail válida
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="senha-usuario">Senha</label>
+            <input  class="form-control is-invalid" type="email" id="senha-usuario" placeholder="Digite sua senha">
+            <div class="invalid-feedback">
+                Senha inválida
+            </div>
+        </div>
+        <input class="btn btn-primary mb-2 mt-2" type="submit" value="Logar">
+    </form>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
